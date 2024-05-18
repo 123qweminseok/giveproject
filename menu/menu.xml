@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/apply"
+        android:title="apply(글 보기)" />
+    <item
+        android:id="@+id/recruitment"
+        android:title="Recruitemet(모집하기로)" />
+    <item
+        android:id="@+id/information"
+        android:title="inf내 정보" />
+
+
+</menu>

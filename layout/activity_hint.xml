@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAEC"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/padding"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:outlineProvider="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email_container"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/email"
+            android:ems="10"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:minWidth="300dp"
+            android:minHeight="50dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:hint="Email:" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hint_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/hint_icon"
+            android:layout_width="62dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="250dp"
+            android:background="@drawable/hint_icon" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/hint_view"
+            android:gravity="left"
+            android:minHeight="50dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:hint="힌트 보여질칸:"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hint_view_bt_container"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:background="@drawable/email_bt"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:hint="힌트 보여주기"
+            />
+    </LinearLayout>
+</LinearLayout>
